@@ -29,8 +29,8 @@ export class CityComponent implements OnInit {
       this.weatherDataService.cityInfo.push({
         CityName: data.name,
         Temperature: data.main.temp,
-        SunriseTime: data.sys.sunrise,
-        SunsetTime: data.sys.sunset,
+        SunriseTime: new Date(data.sys.sunrise * 1000).toLocaleTimeString("en-US"),
+        SunsetTime: new Date(data.sys.sunset * 1000).toLocaleTimeString("en-US"),
         SeaLevel: data.main.sea_level ? data.main.sea_level : 'Sea Level not available right now'
       });
     }   

@@ -22,7 +22,7 @@ export class WeatherDataService {
     return this.http.get(this.WEATHER_URL, {params: params});
   }
 
-  getForecaseData(city: string): Observable<any>{ 
+  getForecastData(city: string): Observable<any>{ 
     let params = new HttpParams();
     params = params.append('q', city);
     params = params.append('appid', this.API_ID);

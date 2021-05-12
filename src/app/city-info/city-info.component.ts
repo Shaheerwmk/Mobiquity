@@ -20,7 +20,7 @@ export class CityInfoComponent implements OnInit {
   ngOnInit() {
     this.cityName = this.activatedroute.snapshot.paramMap.get("cityName");
     
-    this.weatherDataService.getForecaseData(this.cityName)
+    this.weatherDataService.getForecastData(this.cityName)
     .subscribe(data =>{
       data.list.forEach((info: any) => {
         let dateInfo = new Date(info.dt_txt);
