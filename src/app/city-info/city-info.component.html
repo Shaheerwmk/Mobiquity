@@ -1,0 +1,12 @@
+<div class="header">
+    <h1>Temperature & Sea Level for Next 5 days at 9.00</h1>
+    <h1>CITY : {{cityName}}</h1>
+</div>
+<div class="content" *ngFor="let info of cityInfo">
+    <p>Date: {{info.Date}}</p>
+    <p>Temperature : {{info.Temperature}}</p>
+    <p>Sea Level : {{info.SeaLevel}}</p>
+</div>
+<div class="content">
+    <button class="glow-on-hover" type="button" (click)="navigateBack()">Back</button>
+</div>

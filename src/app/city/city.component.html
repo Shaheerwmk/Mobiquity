@@ -1,0 +1,18 @@
+<ng-container *ngIf="publishedCityInfo">
+    <div *ngFor="let city of europeanCountries">
+        <div class="container">
+            <div class="container__image_{{city}}">
+                <div class="container__info container__author">
+                    <div class="link" (click)="openCityInfo(city)">{{city}}</div>
+                    <div *ngFor="let info of weatherDataService.cityInfo">
+                        <div *ngIf="info.CityName === city">
+                            <p>Temperature : {{info.Temperature}}</p>
+                            <p>Sunrise Time : {{info.SunriseTime}}</p>
+                            <p>Sunset Time: {{info.SunsetTime}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

@@ -1,0 +1,347 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container__image_Istanbul {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-image: url("src/assets/Istanbul.jpg");
+	background-size: cover;
+	transition: ease-in-out 0.3s;
+	z-index: 2;
+}
+
+.container__image_Istanbul:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background: inherit;
+	background-position: bottom;
+	filter: blur(40px) saturate(0%);
+	transform: scaleX(0.4);
+	transition: ease-in-out 0.4s;
+	border-radius: 120px;
+	transform-origin: right;
+	opacity: 0;
+	z-index: -1;
+}
+
+.container__image_Istanbul .container__info {
+	position: relative;
+	line-height: 1.8;
+	transition: ease-in-out 0.3s;
+	opacity: 0;
+}
+
+.container__image_Istanbul .container__location {
+	transition-delay: 0.15s;
+}
+
+.container__image_Istanbul:hover {
+	border-radius: 0;
+	width: 450px;
+	height: 310px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+
+.container__image_Istanbul:hover:before {
+	width: 100%;
+	opacity: 0.18;
+	filter: blur(10px) saturate(100%);
+	transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+
+.container__image_Istanbul:hover .container__info {
+	transform: translate3d(-60%, 0px, 0px);
+	opacity: 1;
+}
+
+.container__image_Florence {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-image: url("src/assets/Florence.jpg");
+	background-size: cover;
+	transition: ease-in-out 0.3s;
+	z-index: 2;
+}
+
+.container__image_Florence:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background: inherit;
+	background-position: bottom;
+	filter: blur(40px) saturate(0%);
+	transform: scaleX(0.4);
+	transition: ease-in-out 0.4s;
+	border-radius: 120px;
+	transform-origin: right;
+	opacity: 0;
+	z-index: -1;
+}
+
+.container__image_Florence .container__info {
+	position: relative;
+	line-height: 1.8;
+	transition: ease-in-out 0.3s;
+	opacity: 0;
+}
+
+.container__image_Florence .container__location {
+	transition-delay: 0.15s;
+}
+
+.container__image_Florence:hover {
+	border-radius: 0;
+	width: 450px;
+	height: 310px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+
+.container__image_Florence:hover:before {
+	width: 100%;
+	opacity: 0.18;
+	filter: blur(10px) saturate(100%);
+	transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+
+.container__image_Florence:hover .container__info {
+	transform: translate3d(-60%, 0px, 0px);
+	opacity: 1;
+}
+
+.container__image_Seville {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-image: url("src/assets/Seville.jpg");
+	background-size: cover;
+	transition: ease-in-out 0.3s;
+	z-index: 2;
+}
+
+.container__image_Seville:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background: inherit;
+	background-position: bottom;
+	filter: blur(40px) saturate(0%);
+	transform: scaleX(0.4);
+	transition: ease-in-out 0.4s;
+	border-radius: 120px;
+	transform-origin: right;
+	opacity: 0;
+	z-index: -1;
+}
+
+.container__image_Seville .container__info {
+	position: relative;
+	line-height: 1.8;
+	transition: ease-in-out 0.3s;
+	opacity: 0;
+}
+
+.container__image_Seville .container__location {
+	transition-delay: 0.15s;
+}
+
+.container__image_Seville:hover {
+	border-radius: 0;
+	width: 450px;
+	height: 310px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+
+.container__image_Seville:hover:before {
+	width: 100%;
+	opacity: 0.18;
+	filter: blur(10px) saturate(100%);
+	transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+
+.container__image_Seville:hover .container__info {
+	transform: translate3d(-60%, 0px, 0px);
+	opacity: 1;
+}
+
+.container__image_Rome {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-image: url("src/assets/Rome.jpg");
+	background-size: cover;
+	transition: ease-in-out 0.3s;
+	z-index: 2;
+}
+
+.container__image_Rome:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background: inherit;
+	background-position: bottom;
+	filter: blur(40px) saturate(0%);
+	transform: scaleX(0.4);
+	transition: ease-in-out 0.4s;
+	border-radius: 120px;
+	transform-origin: right;
+	opacity: 0;
+	z-index: -1;
+}
+
+.container__image_Rome .container__info {
+	position: relative;
+	line-height: 1.8;
+	transition: ease-in-out 0.3s;
+	opacity: 0;
+}
+
+.container__image_Rome .container__location {
+	transition-delay: 0.15s;
+}
+
+.container__image_Rome:hover {
+	border-radius: 0;
+	width: 450px;
+	height: 310px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+
+.container__image_Rome:hover:before {
+	width: 100%;
+	opacity: 0.18;
+	filter: blur(10px) saturate(100%);
+	transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+
+.container__image_Rome:hover .container__info {
+	transform: translate3d(-60%, 0px, 0px);
+	opacity: 1;
+}
+
+.container__image_Lisbon {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-image: url("src/assets/Lisbon.jpg");
+	background-size: cover;
+	transition: ease-in-out 0.3s;
+	z-index: 2;
+}
+
+.container__image_Lisbon:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background: inherit;
+	background-position: bottom;
+	filter: blur(40px) saturate(0%);
+	transform: scaleX(0.4);
+	transition: ease-in-out 0.4s;
+	border-radius: 120px;
+	transform-origin: right;
+	opacity: 0;
+	z-index: -1;
+}
+
+.container__image_Lisbon .container__info {
+	position: relative;
+	line-height: 1.8;
+	transition: ease-in-out 0.3s;
+	opacity: 0;
+}
+
+.container__image_Lisbon .container__location {
+	transition-delay: 0.15s;
+}
+
+.container__image_Lisbon:hover {
+	border-radius: 0;
+	width: 450px;
+	height: 310px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+
+.container__image_Lisbon:hover:before {
+	width: 100%;
+	opacity: 0.18;
+	filter: blur(10px) saturate(100%);
+	transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+
+.container__image_Lisbon:hover .container__info {
+	transform: translate3d(-60%, 0px, 0px);
+	opacity: 1;
+}
+
+.link {
+	border-bottom: 1px solid transparent;
+	color: #06C0A8;
+	text-decoration: none;
+	transition: ease-in 0.13s;
+    cursor: pointer;
+}
+
+.link:hover {
+	background-color: #06C0A8;
+	color: #ffffff;
+}
+
+h1.header {
+    font-family: Georgia, sans-serif;
+    font-size: 5em;
+    letter-spacing: -2px;
+}
