@@ -6,7 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { CityComponent } from './city/city.component';
 import { CityInfoComponent } from './city-info/city-info.component';
 import { WeatherDataService } from './services/weather-data.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './auth/token.interceptor';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,13 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [WeatherDataService],
+  providers: [WeatherDataService
+    // ,{
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: TokenInterceptor,
+    //   multi: true
+    // }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

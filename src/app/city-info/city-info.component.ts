@@ -35,10 +35,15 @@ export class CityInfoComponent implements OnInit {
           })
         }
       });     
-    })
+    },
+    err => console.log(err))
   }
 
   navigateBack(){
     this.router.navigate(['/home/city'])
+  }
+
+  navigatePrograms(){
+    this.router.navigate(['/programs/'])
   }
 }

@@ -18,7 +18,8 @@ const routes: Routes = [
         component: CityInfoComponent
       }
     ]
-  }
+  },
+  { path : 'programs', loadChildren : () => import('src/app/programs/programs.module').then(m => m.ProgramsModule) },
 ];
 
 @NgModule({
