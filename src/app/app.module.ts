@@ -25,7 +25,7 @@ import { TokenInterceptor } from './auth/token.interceptor';
     // ,{
     //   provide: HTTP_INTERCEPTORS,
     //   useClass: TokenInterceptor,
-    //   multi: true
+    //   multi: true //When true, injector returns an array of instances /// injects an array of values
     // }
   ],
   bootstrap: [AppComponent]
